@@ -17,3 +17,4 @@ add_library(ImGui_SDL3_GPU STATIC
 )
 target_include_directories(ImGui_SDL3_GPU PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/backends)
 target_link_libraries(ImGui_SDL3_GPU PUBLIC ImGui_Base)
+target_link_libraries(ImGui_SDL3_GPU PRIVATE SDL3::SDL3)
